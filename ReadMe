@@ -7,11 +7,16 @@
 
 ## Getting Started
 
-### See available REST endpoints
+### See available REST endpoints using Swagger UI
 
 Swagger UI - http://localhost:8080/swagger-ui.html
 
 Please Note -
 * Currently, H2 in-memory database is used to hold the contacts in the address book. This can be changed to store the data in persisted DB by updating the configuration.
-* For testing, there will be 5 contacts loaded in the Database during the application start up.
+* For testing, there will be 5 contacts loaded in the in-memory database during the application start up.
+* The H2 in-memory database can be accessed via web console "http://localhost:8080/h2-console/"
+    -> Driver Class: org.h2.Driver
+    -> JDBC URL: jdbc:h2:mem:testdb
+    -> Username: sa
+    -> Password: <Keep it blank>
 * The current implementation can be enhanced further to store multiple address, phone number and email for a given contact person.
